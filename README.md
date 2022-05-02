@@ -2,15 +2,24 @@
 
 ---
 
-## Values, Types and Operators
+## Data Types
 
-### Numbers
+### Number (integer of floating-point)
 
-### Strings
+- The number type is used for integer and floating-point numbers.
+- JavaScript numbers are always 64-bit floating-point, where the number is stored in bits 0 to 51, the exponent in bits 52 to 62, and the sign-in bit 63.
 
-### Boolean values
+### String (represent textual data)
 
-### Empty values
+### BigInt (large integers)
+
+### Boolean (true or false)
+
+### undefined (not initialized value)
+
+### null (denotes an empty value)
+
+---
 
 ### Unary operators
 
