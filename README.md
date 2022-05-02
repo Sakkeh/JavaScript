@@ -2,6 +2,20 @@
 
 ---
 
+## Values, Types adn Operators
+
+### Numbers
+
+### Strings
+
+### Boolean values
+
+### Empty values
+
+### Unary operators
+
+### Automatic type conversion
+
 ## Hoisting - var
 
 Hoisting in JavaScript is a behavior in which a function or a variable can be used before declaration.
@@ -12,5 +26,14 @@ Variable declarations using **var** are treated as if they’re at the top of th
 // using test before declaring
 console.log(test);   // undefined
 var test;
+
+```
+
+The above program works and the output will be undefined. The above program behaves as
+
+```
+// using test before declaring
+var test;
+console.log(test); // undefined
 
 ```
