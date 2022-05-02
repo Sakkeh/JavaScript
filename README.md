@@ -2,7 +2,7 @@
 
 ---
 
-## Values, Types adn Operators
+## Values, Types and Operators
 
 ### Numbers
 
