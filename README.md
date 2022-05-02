@@ -4,7 +4,7 @@
 
 ## Data Types
 
-### Number (integer of floating-point)
+### Number (integer or floating-point)
 
 - The number type is used for integer and floating-point numbers.
 - JavaScript numbers are always 64-bit floating-point, where the number is stored in bits 0 to 51, the exponent in bits 52 to 62, and the sign-in bit 63.
