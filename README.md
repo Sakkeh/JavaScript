@@ -51,7 +51,7 @@ console.log(test); // undefined
 
 ## Functional programming
 
-### Higher order functions
+### Higher order functions [Link to source code:](https://github.com/Sakkeh/JavaScript/blob/d3a28158fbb005d30c99e9246e71f444c3a6107f/higherorderfunctions.js)
 
 In Javascript, functions can be assigned to variables in the same way that strings or arrays can. They can be passed into other functions as parameters or returned from them as well. A “higher-order function” is a function that accepts functions as parameters and/or returns a function.
 
