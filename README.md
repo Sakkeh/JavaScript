@@ -122,8 +122,8 @@ const vehicles = [
   { name: 'Cessna', type: 'aeroplane' },
 ];
 
-let isCar = functions(vehicle) {
-    return vehcile.type === 'car';
+let isCar = function(vehicle) {
+    return vehicle.type === 'car';
 }
 let cars = vehicles.filter(isCar);
 
