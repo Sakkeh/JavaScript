@@ -46,3 +46,51 @@ var test;
 console.log(test); // undefined
 
 ```
+
+---
+
+### Functional programming
+
+## Higher order functions
+
+In Javascript, functions can be assigned to variables in the same way that strings or arrays can. They can be passed into other functions as parameters or returned from them as well. A “higher-order function” is a function that accepts functions as parameters and/or returns a function.
+
+**Example: filtering an array**
+
+**old way**
+
+```
+const vehicles = [
+  { name: 'Ferrari', type: 'car' },
+  { name: 'ChrisCraft', type: 'boat' },
+  { name: 'Saab', type: 'car' },
+  { name: 'Skoda', type: 'car' },
+  { name: 'Cessna', type: 'aeroplane' },
+];
+
+let cars = [];
+
+for (let i = 0; i < vehicles.length; i++) {
+  if (vehicles[i].type === 'car') cars.push(vehicles[i]);
+}
+
+console.log(cars);
+```
+
+**using a filter function (higher order function)**
+
+```
+const vehicles = [
+  { name: 'Ferrari', type: 'car' },
+  { name: 'ChrisCraft', type: 'boat' },
+  { name: 'Saab', type: 'car' },
+  { name: 'Skoda', type: 'car' },
+  { name: 'Cessna', type: 'aeroplane' },
+];
+
+let cars = vehicles.filter(function(vehicle) {
+    return vehicle.type === 'car';
+});
+
+console.log(cars);
+```
