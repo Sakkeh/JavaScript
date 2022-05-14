@@ -57,7 +57,7 @@ In Javascript, functions can be assigned to variables in the same way that strin
 
 **Example: filtering an array**
 
-**old way using for loop**
+**Old way using for loop**
 
 ```
 const vehicles = [
@@ -85,7 +85,7 @@ OUTPUT:
 ]
 ```
 
-**using a filter function (higher order function)**
+**Using a filter function (higher order function)**
 
 ```
 const vehicles = [
@@ -111,7 +111,7 @@ OUTPUT:
 ]
 ```
 
-**using a filter function (broken down into separate functions)**
+**Using a filter function (broken down into separate functions)**
 
 ```
 const vehicles = [
