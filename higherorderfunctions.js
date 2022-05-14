@@ -1,3 +1,7 @@
+// Higher order functions
+
+// Filter
+
 const vehicles = [
   { name: 'Ferrari', type: 'car' },
   { name: 'ChrisCraft', type: 'boat' },

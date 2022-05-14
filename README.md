@@ -51,9 +51,17 @@ console.log(test); // undefined
 
 ## Functional programming
 
-### Higher order functions [Link to source code](https://github.com/Sakkeh/JavaScript/blob/d3a28158fbb005d30c99e9246e71f444c3a6107f/higherorderfunctions.js)
+### Higher order functions
+
+[Link to source code](https://github.com/Sakkeh/JavaScript/blob/d3a28158fbb005d30c99e9246e71f444c3a6107f/higherorderfunctions.js)
 
 In Javascript, functions can be assigned to variables in the same way that strings or arrays can. They can be passed into other functions as parameters or returned from them as well. A “higher-order function” is a function that accepts functions as parameters and/or returns a function.
+
+Higher order functions: filter, map...
+
+### Filter
+
+The filter() method creates a new array with all elements that pass the test implemented by the provided function.
 
 **Example: filtering an array**
 
@@ -161,5 +169,72 @@ console.log(`Every vehicle is a car: ${isEveryVehicleACar}`);
 OUTPUT:
 
 Every vehicle is a car: false
+
+```
+
+### Map
+
+The map() method creates a **new array** populated with the results of calling a provided function on every element in the calling array.
+
+**Example: Get all names of the vehicles in the vehicles array**
+
+```
+const vehicles = [
+{ name: 'Ferrari', type: 'car' },
+{ name: 'ChrisCraft', type: 'boat' },
+{ name: 'Saab', type: 'car' },
+{ name: 'Skoda', type: 'car' },
+{ name: 'Cessna', type: 'aeroplane' },
+];
+
+// Old way (for loop)
+let names = [];
+for (let i = 0; i < vehicles.length; i++) {
+  names.push(vehicles[i].name);
+}
+console.log(names);
+
+// Using map (create a subset of an object)
+names = vehicles.map(function (vehicle) {
+  return vehicle.name;
+});
+
+console.log(names);
+
+// Using map (crate a new object)
+names = vehicles.map(function (vehicle) {
+  return vehicle.name + ' is a ' + vehicle.type;
+});
+
+console.log(names);
+
+// Using map with arrow functions (ES6)
+names = vehicles.map((vehicle) => {
+  return vehicle.name;
+});
+
+console.log(names);
+
+// Using map with arrow functions (shortening code)
+// Get rid of curly brackets & return word when function logic fits on one line
+names = vehicles.map((vehicle) => vehicle.name);
+
+console.log(names);
+
+// Using map with arrow functions (shortening code)
+// Replace variable names with x
+names = vehicles.map((x) => x.name);
+
+console.log(names);
+
+```
+
+### Reduce
+
+The reduce() method executes a user-supplied "reducer" callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value.
+
+**Example: **
+
+```
 
 ```
