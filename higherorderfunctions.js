@@ -32,3 +32,8 @@ let isCar = function (vehicle) {
 cars = vehicles.filter(isCar);
 
 console.log(cars);
+
+// We can use the same isCar function in another function
+let isEveryVehicleACar = vehicles.every(isCar);
+
+console.log(`Every vehicle is a car: ${isEveryVehicleACar}`);

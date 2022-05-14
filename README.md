@@ -137,3 +137,29 @@ OUTPUT:
   { name: 'Skoda', type: 'car' }
 ]
 ```
+
+**We can use the decoupled isCar function in another function**
+
+```
+const vehicles = [
+  { name: 'Ferrari', type: 'car' },
+  { name: 'ChrisCraft', type: 'boat' },
+  { name: 'Saab', type: 'car' },
+  { name: 'Skoda', type: 'car' },
+  { name: 'Cessna', type: 'aeroplane' },
+];
+
+let isCar = function(vehicle) {
+    return vehicle.type === 'car';
+}
+
+// We can use the same isCar function in another function
+let isEveryVehicleACar = vehicles.every(isCar);
+
+console.log(`Every vehicle is a car: ${isEveryVehicleACar}`);
+
+OUTPUT:
+
+Every vehicle is a car: false
+
+```
