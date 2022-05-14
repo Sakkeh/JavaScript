@@ -23,3 +23,12 @@ cars = vehicles.filter(function (vehicle) {
 });
 
 console.log(cars);
+
+// Filter functions broken down into separate functions
+
+let isCar = function (vehicle) {
+  return vehicle.type === 'car';
+};
+cars = vehicles.filter(isCar);
+
+console.log(cars);

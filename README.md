@@ -57,7 +57,7 @@ In Javascript, functions can be assigned to variables in the same way that strin
 
 **Example: filtering an array**
 
-**old way**
+**old way using for loop**
 
 ```
 const vehicles = [
@@ -99,6 +99,33 @@ const vehicles = [
 let cars = vehicles.filter(function(vehicle) {
     return vehicle.type === 'car';
 });
+
+console.log(cars);
+
+OUTPUT:
+
+[
+  { name: 'Ferrari', type: 'car' },
+  { name: 'Saab', type: 'car' },
+  { name: 'Skoda', type: 'car' }
+]
+```
+
+**using a filter function (broken down into separate functions)**
+
+```
+const vehicles = [
+  { name: 'Ferrari', type: 'car' },
+  { name: 'ChrisCraft', type: 'boat' },
+  { name: 'Saab', type: 'car' },
+  { name: 'Skoda', type: 'car' },
+  { name: 'Cessna', type: 'aeroplane' },
+];
+
+let isCar = functions(vehicle) {
+    return vehcile.type === 'car';
+}
+let cars = vehicles.filter(isCar);
 
 console.log(cars);
 
