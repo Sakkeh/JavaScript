@@ -75,6 +75,14 @@ for (let i = 0; i < vehicles.length; i++) {
 }
 
 console.log(cars);
+
+OUTPUT:
+
+[
+  { name: 'Ferrari', type: 'car' },
+  { name: 'Saab', type: 'car' },
+  { name: 'Skoda', type: 'car' }
+]
 ```
 
 **using a filter function (higher order function)**
@@ -93,4 +101,12 @@ let cars = vehicles.filter(function(vehicle) {
 });
 
 console.log(cars);
+
+OUTPUT:
+
+[
+  { name: 'Ferrari', type: 'car' },
+  { name: 'Saab', type: 'car' },
+  { name: 'Skoda', type: 'car' }
+]
 ```
