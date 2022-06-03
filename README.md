@@ -42,6 +42,17 @@ anything here will be ignored
 */
 ```
 
+## Variables
+
+From ES6 onwards, JavaScript uses the keywords **const** and **let** to declare variables. The keyword **const** is used when the variable will not be reassigned to another value, whereas **let** is used if the variable might be reassigned later in the program.
+
+```
+const car = 'Ford'; // This won't be assigned to another variable
+
+let dynamic = 0; // This may change during the program
+
+```
+
 ## Data Types
 
 ### Number (integer or floating-point)
@@ -52,7 +63,45 @@ JavaScript numbers are always 64-bit floating-point, where the number is stored 
 
 ### String (represent textual data)
 
+The JavaScript type for representing text is the string. A string is an
+immutable ordered sequence of 16-bit values, each of which typically
+represents a Unicode character.
+
+Strings are written by enclosing their content in quotes.
+
+To include a string in a JavaScript program, simply enclose the
+characters of the string within a matched pair of single or double
+quotes or backticks (' or " or `).
+
+Strings delimited with **backticks** are a feature of ES6, and allow
+JavaScript expressions to be embedded within the string literal.
+
+String examples:
+
+```
+"" // An empty string: with zero characters
+'testing'
+"3.14"
+'name="myform"'
+"Wouldn't you prefer O'Reilly's book?"
+"τ is the ratio of a circle's circumference to its radius"
+`"She said 'hi'", he said.`
+
+// Example of embedded JavaScript expression in string literal using backticks
+let name = "Jack";
+let greeting = `Hello ${ name }.`;
+
+// greeting == "Hello Jack."
+
+```
+
 ### BigInt (large integers)
+
+One of the newest features of JavaScript, defined in ES2020, is a new
+numeric type known as BigInt.
+
+BigInt is a numeric type whose values are integers. The type was added to
+JavaScript mainly to allow the representation of 64-bit integers.
 
 ### Boolean (true or false)
 
