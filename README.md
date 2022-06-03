@@ -4,6 +4,26 @@
 
 ## Reserved Words
 
+The following words are reserved for use by the JavaScript language and cannot
+be used to name variables, function parameters or object properties.
+
+```
+abstract, await, boolean, break, byte, case, catch, char,
+class, const, continue, debugger, default, delete, do,
+double, else, enum, export, extends, false, final, finally,
+float, for, function, goto, if, implements, import, in,
+instanceof, int, interface, let, long, native, new, null,
+package, private, protected, public, return, short, static,
+super, switch, synchronized, this, throw, throws, transient,
+34 JavaScript: Novice to Ninja, 2nd Editiontrue, try, typeof, var, volatile, void, while, with, yield
+```
+
+These words should also be treated as reserved words as they are an important part of the language:
+
+```
+undefined, NaN, Infinity
+```
+
 ## Comments
 
 In JavaScript there are two types of comment:
