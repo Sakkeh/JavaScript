@@ -2,12 +2,33 @@
 
 ---
 
+## Reserved Words
+
+## Comments
+
+In JavaScript there are two types of comment:
+
+Single line comments starting with // and finishing at the end of the line:
+
+```
+// this is a short comment
+```
+
+Multi-line comments starting with /_ and finishing with _/:
+
+```
+/* This is a longer comment
+anything here will be ignored
+*/
+```
+
 ## Data Types
 
 ### Number (integer or floating-point)
 
-- The number type is used for integer and floating-point numbers.
-- JavaScript numbers are always 64-bit floating-point, where the number is stored in bits 0 to 51, the exponent in bits 52 to 62, and the sign-in bit 63.
+The number type is used for integer and floating-point numbers.
+
+JavaScript numbers are always 64-bit floating-point, where the number is stored in bits 0 to 51, the exponent in bits 52 to 62, and the sign-in bit 63.
 
 ### String (represent textual data)
 
@@ -233,8 +254,70 @@ console.log(names);
 
 The reduce() method executes a user-supplied "reducer" callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value.
 
-**Example: **
+Reduce is the multitool of list transformations. It can be used to express any list transformation.
+
+**Example: Calculate the sum of prices in the array**
+
+Old way (for loop)
+
+```
+const shoppinCart = [
+{ price: 40 },
+{ price: 600 },
+{ price: 202 },
+{ price: 200 },
+{ price: 930 },
+{ price: 230 },
+];
+
+let totalAmount = 0;
+for (let i = 0; i < shoppinCart.length; i++) {
+  totalAmount += shoppinCart[i].price;
+}
+console.log(totalAmount);
+
+OUTPUT: 2202
+```
+
+Using reduce
+
+```
+const shoppinCart = [
+{ price: 40 },
+{ price: 600 },
+{ price: 202 },
+{ price: 200 },
+{ price: 930 },
+{ price: 230 },
+];
+
+totalAmount = shoppinCart.reduce(function (sum, shoppingCartItem) {
+  console.log('iteration', sum, shoppingCartItem);
+  return sum + shoppingCartItem.price;
+}, 0);
+console.log(totalAmount);
+// The zero valued second argument after the callback function is the starting value of the sum.
+// The sum will be passed to the next iteration until all items
+// have been processed.
+
+OUTPUT:
+iteration 0 { price: 40 }
+iteration 40 { price: 600 }
+iteration 640 { price: 202 }
+iteration 842 { price: 200 }
+iteration 1042 { price: 930 }
+iteration 1972 { price: 230 }
+2202
 
 ```
 
+Using reduce (ES6 arrow function to shorten code)
+
 ```
+totalAmount = shoppinCart.reduce((sum, shoppingCartItem) => sum + shoppingCartItem.price, 0);
+console.log(totalAmount);
+
+OUTPUT: 2202
+```
+
+**Example: xxx**
