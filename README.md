@@ -26,7 +26,7 @@ undefined, NaN, Infinity
 
 ## Comments
 
-In JavaScript there are two types of comment:
+In JavaScript there are two types of comments:
 
 Single line comments starting with // and finishing at the end of the line:
 
