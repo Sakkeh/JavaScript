@@ -15,7 +15,7 @@ float, for, function, goto, if, implements, import, in,
 instanceof, int, interface, let, long, native, new, null,
 package, private, protected, public, return, short, static,
 super, switch, synchronized, this, throw, throws, transient,
-34 JavaScript: Novice to Ninja, 2nd Editiontrue, try, typeof, var, volatile, void, while, with, yield
+true, try, typeof, var, volatile, void, while, with, yield
 ```
 
 These words should also be treated as reserved words as they are an important part of the language:
