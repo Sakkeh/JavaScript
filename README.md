@@ -46,9 +46,12 @@ anything here will be ignored
 
 ### Number (integer or floating-point)
 
-The number type is used for integer and floating-point numbers.
+> blockquote
+> The number type is used for integer and floating-point numbers.
 
 JavaScript numbers are always 64-bit floating-point, where the number is stored in bits 0 to 51, the exponent in bits 52 to 62, and the sign-in bit 63.
+
+> blockquote
 
 ### String (represent textual data)
 
@@ -68,9 +71,12 @@ JavaScript numbers are always 64-bit floating-point, where the number is stored 
 
 ## Hoisting - var
 
-Hoisting in JavaScript is a behavior in which a function or a variable can be used before declaration.
+> blockquote
+> Hoisting in JavaScript is a behavior in which a function or a variable can be used before declaration.
 
 Variable declarations using **var** are treated as if they’re at the top of the function (or in the global scope, if declared outside of a function) regardless of where the actual declaration occurs; this is called hoisting.
+
+> blockquote
 
 ```
 // using test before declaring
@@ -94,11 +100,14 @@ console.log(test); // undefined
 
 ### Higher order functions
 
-[Link to source code](https://github.com/Sakkeh/JavaScript/blob/d3a28158fbb005d30c99e9246e71f444c3a6107f/higherorderfunctions.js)
+> blockquote
+> [Link to source code](https://github.com/Sakkeh/JavaScript/blob/d3a28158fbb005d30c99e9246e71f444c3a6107f/higherorderfunctions.js)
 
 In Javascript, functions can be assigned to variables in the same way that strings or arrays can. They can be passed into other functions as parameters or returned from them as well. A “higher-order function” is a function that accepts functions as parameters and/or returns a function.
 
 Higher order functions: filter, map...
+
+> blockquote
 
 ### Filter
 
