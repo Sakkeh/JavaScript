@@ -117,9 +117,59 @@ The primitive type **boolean** comprises two values - false and true:
 
 ---
 
-### Unary operators
+## Expressions and Operators
 
-### Automatic type conversion
+### Primary expressions
+
+Primary expressions in JavaScript are constant or literal values, certain
+language keywords, and variable references.
+
+```
+"howdy" // A string literal
+3.55 // A number literal
+
+```
+
+### Primary expressions
+
+Object and array initializers are expressions whose value is a newly
+created object or array.
+
+These initializer expressions are sometimes called **object literals** and **array literals**.
+
+```
+[] // An empty array: no expressions inside brackets means no elements
+
+[2+2,5+4] // A 2-element array. First element is 4, second is 9
+
+```
+
+**Undefined elements** can be included in an array literal by omitting a value between commas.
+
+```
+let sparseArray = [1,,,,5];
+
+```
+
+**Object initializer expressions** are like array initializer expressions, but
+the square brackets are replaced by curly brackets, and each
+subexpression is prefixed with a property name and a colon:
+
+```
+let c = { x: 2.2, y: -1.7 }; // An object with 2 properties
+let u = {}; // An empty object with no properties
+u.x = 2.2; u.y = -1.7; // Now u has the same properties as p
+```
+
+In ES6, object literals have a much more feature-rich syntax (you can
+find details in §6.10). Object literals can be nested. For example:
+
+let rectangle = {
+upperLeft: { x: 2, y: 2 },
+lowerRight: { x: 4, y: 5 }
+};
+
+---
 
 ## Hoisting - var
 
