@@ -98,16 +98,22 @@ let greeting = `Hello ${ name }.`;
 ### BigInt (large integers)
 
 One of the newest features of JavaScript, defined in ES2020, is a new
-numeric type known as BigInt.
+numeric type known as **BigInt**.
 
 BigInt is a numeric type whose values are integers. The type was added to
 JavaScript mainly to allow the representation of 64-bit integers.
 
 ### Boolean (true or false)
 
+The primitive type **boolean** comprises two values - false and true:
+
 ### undefined (not initialized value)
 
+**undefined** means "not initialized" (e.g., a variable) or "not existing" (e.g., a property of an object).
+
 ### null (denotes an empty value)
+
+**null** means "the intentional absence of any object value"
 
 ---
 
